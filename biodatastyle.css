@@ -1,0 +1,484 @@
+body{
+    background-image: url(midnight\ bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    background-color:rgb(225, 218, 251);
+}
+
+.banner__content{
+    padding: 1px;
+}
+
+
+h3{
+    color: rgb(77, 62, 163);
+    text-align: center;
+    font-family: "matcha mint";
+    font-size: 25px;
+    text-shadow: 
+    -3px -3px 0 white,  3px -3px 0 white,
+    -3px  3px 0 white,  3px  3px 0 white,
+    -3px  0px 0 white,  3px  0px 0 white,
+     0px -3px 0 white,  0px  3px 0 white;
+
+}
+
+h2{
+    background-color: rgb(255, 210, 244);
+    color: rgb(69, 12, 63);
+    font-family: "matcha mint";
+    border-radius: 12px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    background-color:rgb(69, 12, 63);
+    color: white;
+    text-align: center;
+    width: 300px;
+    font-family: "lexend";
+    border-radius: 12px;
+}
+
+p{
+    color:black;
+    font-family: "lexend";
+    font-size: 12px;
+}
+/* format font: .otf/,ttf */
+@font-face {
+    font-family: "matcha mint";
+    src: url("matcha_mint/Matcha\ Mint.otf");
+}
+
+@font-face {
+    font-family: "lexend";
+    src: url("Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+
+/* bisa tulis "div.biodata" or ".biodata" for class */
+/* resize bentuk jenis as landscape for films */
+
+.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color:antiquewhite;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 
+    -3px -3px 0 rgb(77, 62, 163),  3px -3px 0 rgb(77, 62, 163),
+    -3px  3px 0 rgb(77, 62, 163),  3px  3px 0 rgb(77, 62, 163),
+    -3px  0px 0 rgb(77, 62, 163),  3px  0px 0 rgb(77, 62, 163),
+     0px -3px 0 rgb(77, 62, 163),  0px  3px 0 rgb(77, 62, 163),
+        -8px -8px 0 white,  8px -8px 0 white,
+        -8px  8px 0 white,  8px  8px 0 white,
+        -8px  0px 0 white,  8px  0px 0 white,
+        0px -8px 0 white,  0px  8px 0 white;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    /* gap> perintah untuk memberi jarak kosong/celah */
+}
+
+.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(69, 12, 63);
+}
+
+.foto img{
+    position: absolute;
+    width: 111%;
+    height: 111%;
+    object-fit: cover;
+    object-position: center;
+    transition:  0.5s ease; opacity: 0.5s ease;
+}
+
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.makanan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img{
+    padding: 10px;
+}
+
+.dimsum{
+    width: 250px;
+    height: 250 px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(250, 235, 215, 0.477), rgb(255, 190, 136));
+    border: 3px solid rgb(154, 40, 142);
+    
+}
+
+.dimsum:hover{
+    overflow: hidden;
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom,  rgb(255, 229, 195), rgb(253, 144, 195));
+}
+
+.sushi{
+    width: 250px;
+    height: 250 px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(250, 235, 215, 0.477), rgb(255, 190, 136));
+    border: 3px solid rgb(154, 40, 142);
+}
+
+.sushi:hover{
+    overflow: hidden;
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom,  rgb(255, 229, 195), rgb(253, 144, 195));
+}
+
+.cake{
+    width: 250px;
+    height: 250 px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(250, 235, 215, 0.477), rgb(255, 190, 136));
+    border: 3px solid rgb(154, 40, 142);
+}
+
+.cake:hover{
+    overflow: hidden;
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom,  rgb(255, 229, 195), rgb(253, 144, 195));
+}
+
+.minuman{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img{
+    padding: 10px;
+}
+
+.chagee{
+    width: 250px;
+    height: 250 px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255, 210, 244, 0.507), rgb(254, 173, 230));
+    border: 3px solid rgb(154, 40, 142);
+}
+
+.chagee:hover{
+    overflow: hidden;
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, rgb(255, 204, 240), rgb(199, 134, 255));
+}
+
+.wintermelon{
+    width: 250px;
+    height: 250 px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255, 210, 244, 0.507), rgb(254, 173, 230));
+    border: 3px solid rgb(154, 40, 142);
+}
+
+.wintermelon:hover{
+    overflow: hidden;
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, rgb(255, 204, 240), rgb(199, 134, 255));
+}
+
+.chuchat{
+    width: 250px;
+    height: 250 px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255, 210, 244, 0.507), rgb(254, 173, 230));
+    border: 3px solid rgb(154, 40, 142);
+}
+
+.chuchat:hover{
+    overflow: hidden;
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, rgb(255, 204, 240), rgb(199, 134, 255));
+}
+
+.film{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img{
+    padding: 10px;
+}
+
+.spiderman{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(230, 235, 255, 0.521), rgb(151, 148, 255));
+    border: 3px solid rgb(154, 40, 142);
+}
+
+.spiderman:hover{
+    overflow: hidden;
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, rgb(124, 155, 255), rgb(191, 180, 255));
+}
+
+.shadow-edge{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(230, 235, 255, 0.521), rgb(151, 148, 255));
+    border: 3px solid rgb(154, 40, 142);
+}
+
+.shadow-edge:hover{
+    overflow: hidden;
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, rgb(124, 155, 255), rgb(191, 180, 255));
+}
+
+.five-cm{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(230, 235, 255, 0.521), rgb(151, 148, 255));
+    border: 3px solid rgb(154, 40, 142);
+}
+
+.five-cm:hover{
+    overflow: hidden;
+    transition:  0.3 ease;
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, rgb(124, 155, 255), rgb(191, 180, 255));
+}
+
+.petal {
+  position: absolute;
+  top: -40px;
+  width: 20px;
+  height: 20px;
+  background: #FFB7C5;
+  border-radius: 0% 60% 0% 60%;
+  z-index: 1;
+  animation-name: fall, sway;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+}
+
+@keyframes fall {
+  from { top: -40px; }
+  to   { top: 450%; }
+}
+
+@keyframes sway {
+  0%   { margin-left: 0px; }
+  50%  { margin-left: 40px; }
+  100% { margin-left: 0px; }
+}
+
+#p1 { left: 5vw;  width: 16px; height: 16px; animation-duration: 7s, 3s;  animation-delay: 0s, 0s; }
+#p2 { left: 18vw; width: 22px; height: 22px; animation-duration: 9s, 4s;  animation-delay: 1s, 1s; }
+#p3 { left: 30vw; width: 14px; height: 14px; animation-duration: 6s, 2.5s; animation-delay: 2s, 2s; }
+#p4 { left: 45vw; width: 20px; height: 20px; animation-duration: 10s, 3.5s; animation-delay: 0.5s, 0.5s; }
+#p5 { left: 58vw; width: 18px; height: 18px; animation-duration: 8s, 3s;  animation-delay: 3s, 3s; }
+#p6 { left: 70vw; width: 24px; height: 24px; animation-duration: 11s, 4.5s; animation-delay: 1.5s, 1.5s; }
+#p7 { left: 82vw; width: 16px; height: 16px; animation-duration: 7.5s, 2.8s; animation-delay: 4s, 4s; }
+#p8 { left: 92vw; width: 20px; height: 20px; animation-duration: 9.5s, 3.2s; animation-delay: 2.5s, 2.5s; }
+
+.twinkle {
+    display: flex;
+    position: fixed;     /* stays in place regardless of scrolling */
+    bottom: 1px;         /* distance from bottom of screen */
+    right: 1px;          /* distance from right of screen */
+    transform: rotate(-5deg);
+    transition:  0.3s ease-in-out;
+}
+
+.twinkle:hover {
+    transform: rotate(10deg);
+}
+
+.twinkle-piano{
+    position: absolute;
+    top: 127px;
+    left: 127px;
+    z-index: 3;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake{
+    0%   { transform: translateX(0px)   rotate(0deg); }
+    20%  { transform: translateX(-6px)  rotate(-4deg); }
+    40%  { transform: translateX(6px)   rotate(4deg); }
+    60%  { transform: translateX(-4px)  rotate(-3deg); }
+    80%  { transform: translateX(4px)   rotate(3deg); }
+    100% { transform: translateX(0px)   rotate(0deg); } 
+}
+
+.e-sushi{
+    position: absolute;
+    top: 505px;
+    left: 430px;
+    z-index: 4;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    animation-name: shake;
+    animation: wiggle 1.5s ease-in-out infinite;
+}
+
+.tea{
+    position: absolute;
+    top: 880px;
+    right: 430px;
+    z-index: 5;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    animation-name: shake;
+    animation: wiggle 1.5s ease-in-out infinite;;
+}
+
+.e-film{
+    position: absolute;
+    top: 1270px;
+    left: 460px;
+    z-index: 6;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    animation-name: shake;
+    animation: wiggle 1.5s ease-in-out infinite;;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-6deg);
+    }
+    50% {
+        transform: rotate(6deg);
+    }
+}
+
+.playlist{
+    width: 350px;   
+    height: 400px; 
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: fit-content;  
+    margin: 0 auto;       
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.twinkle-teddy{
+    position: absolute;
+    top: 1630px;
+    right: 430px;
+    z-index: 3;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}

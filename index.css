@@ -1,0 +1,285 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+@font-face {
+        font-family: "tommy";
+        src: url(tommy/tommy\ font.otf); 
+      }
+
+      @font-face {
+        font-family: "takeover";
+        src: url(takeover/Takeover.ttf); 
+      }
+
+/* style pada header */
+
+.header{
+    background-image: url(rain.gif);    
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.text-header{
+    font-family: "takeover";
+    color: antiquewhite;
+    text-shadow: 
+    -3px -3px 0 rgb(171, 88, 114),  3px -3px 0 rgb(171, 88, 114),
+    -3px  3px 0 rgb(171, 88, 114),  3px  3px 0 rgb(171, 88, 114),
+    -3px  0px 0 rgb(171, 88, 114),  3px  0px 0 rgb(171, 88, 114),
+     0px -3px 0 rgb(171, 88, 114),  0px  3px 0 rgb(171, 88, 114), 0 0 20px #ffe733b6;
+    
+    animation: wigglewigglewiggle 1.5s ease-in-out infinite;
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center;     /* Aligns vertically */
+    height: 70px;  
+}
+
+
+@keyframes wigglewigglewiggle {
+    0%, 100% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+}
+
+
+/* style pada topnav */
+.topnav{
+    overflow: hidden;
+    background-color: palevioletred;
+    font-family: "lexend";
+    font-weight: bold;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: cornsilk;
+    color: brown;
+}
+
+.footer{
+    background-color: beige;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* style table */
+@font-face {
+    font-family: "lexend";
+    src: url("Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+
+h2{
+    background-color: rgb(255, 210, 244);
+    color: rgb(69, 12, 63);
+    font-family: "matcha mint";
+    border-radius: 12px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table,th,td{
+    border: solid 1px black;
+}
+
+.siswa{
+    border-collapse: collapse;
+    width: 95%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    align-items: center;
+    font-family: "lexend";
+}
+
+.merge{
+    border-collapse: collapse;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    margin-bottom: 20px ;
+    
+    font-family: "lexend";
+}
+
+th,td{
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    background-color: #e1dafb;
+}
+
+tr:nth-child(1){
+    background-color: #758ad1;
+}
+
+td:hover{
+    background-color: #ffb0e1;
+    transition: 0.2s ease-in-out;
+}
+
+th:hover{
+    background-color: #ffb0e1;
+    transition: 0.2s ease-in-out;
+}
+
+/* style pada List */
+ul{
+    background-color: #e1dafb;
+    border: 3px solid cornflowerblue;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-type: inside square;
+    font-family: "lexend";
+}
+
+ul li{
+    background-color: #afa0e4;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid #4960ac;
+    text-align: justify;
+    font-family: "lexend";
+}
+
+ol{
+    background-color: #e1dafb;
+    border: 3px solid cornflowerblue;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-type: inside;
+    list-style-type: lower-alpha;
+    font-family: "lexend";
+}
+
+ol li{
+    background-color: #afa0e4;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid #4960ac;
+    text-align: justify;
+    font-family: "lexend";
+}
+
+ol ul{
+    background-color: transparent;
+    border: none;
+    padding: 0 0 0 60px;
+    margin: 0;
+    list-style-type: circle;
+    font-family: "lexend";
+}
+
+/* hooooooooover */
+
+.drink:hover{
+    transform: scale(101%);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px #ffc400b6;
+}
+
+ul li:hover{
+    transform: scale(101%);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px black;
+}
+
+ol:hover{
+    transform: scale(101%);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px #ffc400b6;
+}
+
+ol li:hover{
+    transform: scale(101%);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px black;
+}
+
+/* hooooooooover */
+
+.food{
+    background-color: rgb(255, 229, 195);
+    border: 3px solid rgb(201, 140, 97);
+}
+
+.food li{
+    background-color: rgb(249, 191, 191);
+    border: 2px solid rgb(95, 47, 47);
+}
+
+.drink{
+    background-color: #d2c6ff;
+    border: 3px solid rgb(82, 112, 168);
+}
+
+.drink li{
+    background-color: rgb(255, 210, 244);
+    border: 2px solid rgb(182, 90, 122);
+}
+
+.makmin{
+    background-color: #ffedc6;
+    border: 3px solid goldenrod;
+}
+
+.makmin li{
+    background-color: #d2c6ff;
+    border: 2px solid rgb(82, 112, 168);
+}
+
+.mimin li{
+    background-color: rgb(245, 178, 202);
+    border: 2px solid white;
+}
+
+.buah{
+    padding-left: 40px;
+    list-style-type: upper-roman;
+    background-color: rgb(175, 200, 238);
+}
+
+.lorem-ipsum li{
+    list-style-type: square;
+    background-color: rgb(208, 234, 234);
+    border: 2px solid rgb(97, 147, 147);
+}
+
+.icon{
+    list-style-type: square;
+    background-color: rgb(245, 168, 226);
+    border: 3px solid rgb(177, 121, 193);
+}
+
+ol li.stroberi{
+    background-color: #ffb0e1;
+    border: 2px solid palevioletred;
+    color: rgb(147, 44, 78);
+    font-weight: bold;
+}

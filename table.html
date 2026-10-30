@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Layout HTML dan CSS</title>
+            <link rel="stylesheet" href="index.css">
+            <link rel="stylesheet" href="biodatastyle.css">
+    </head>
+    <body>
+        <div class="header">
+            <p class="text-header"><font size="25pt">Welcome to My Website!</font></p>
+        </div>
+        <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="table.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="sts.html">STS</a>
+        </div>
+        <!-- Bagian Content -->
+
+    <center><h2>Table Nilai Siswa</h2></center>
+        <!-- rowspan: menggabungkan baris
+        colspan: menggabungkan kolom -->
+
+    <Table class="siswa">
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Nama Siswa</th>
+            <th rowspan="2">Mata Pelajaran</th>
+            <th colspan="2">Nilai</th>
+        </tr>
+        <tr>
+            <th>Ulangan 1</th>
+            <th>Ulangan 2</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Chloe</td>
+            <td>Agama</td>
+            <td>80</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Marionette</td>
+            <td>Mtk</td>
+            <td>98</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Adrian</td>
+            <td>Bindo</td>
+            <td>100</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Rin</td>
+            <td>PJOK</td>
+            <td>87</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Kayla</td>
+            <td>Bio</td>
+            <td>79</td>
+            <td>89</td>
+        </tr>
+    </Table>
+
+    <center><h2>Table Merge</h2></center>
+    <table class="merge">
+    <tr>
+        <th rowspan="3">A</th>
+        <th rowspan="2">B</th>
+        <th colspan="2">C</th>
+        <th rowspan="3">D</th>
+        <th rowspan="4">E</th>
+        <th rowspan="2">N</th>
+        <th rowspan="6">H</th>
+    </tr>
+    <tr>
+        <th>F</th>
+        <th>G</th>
+    </tr>
+    <tr>
+        <th>I</th>
+        <th>J</th>
+        <th>K</th>
+        <th rowspan="2">O</th>
+    </tr>
+    <tr>
+        <th colspan="5">M</th>
+    </tr>
+    <tr>
+        <th rowspan="2">P</th>
+        <th colspan="2">Q</th>
+        <th rowspan="2">R</th>
+        <th>U</th>
+        <th>V</th>
+        <th>W</th>
+    </tr>
+    <tr>
+        <th>S</th>
+        <th>T</th>
+        <th>X</th>
+        <th>Y</th>
+        <th>Z</th>
+    </tr>
+</table>
+<div class="footer">
+            <p>Leva 93/24</p>
+        </div>
+    </body>
+</html>

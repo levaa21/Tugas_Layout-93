@@ -1,0 +1,660 @@
+body{
+    background-image: url(pink\ bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+      @font-face {
+          font-family: "lexend";
+          src: url("Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+      }
+
+      @font-face {
+        font-family: "tommy";
+        src: url(tommy/tommy\ font.otf); 
+      }
+
+      @font-face {
+        font-family: "takeover";
+        src: url(takeover/Takeover.ttf); 
+      }
+
+      @font-face {
+        font-family: "beachsunshine";
+        src: url(beachsunshine/Beach\ Sunshine.ttf);
+      }
+
+h1{
+  font-family: "tommy";
+  color: #feb7c9;
+  text-shadow: 
+    -5px -5px 0 white,  5px -5px 0 white,
+    -5px  5px 0 white,  5px  5px 0 white,
+    -5px  0px 0 white,  5px  0px 0 white,
+     0px -5px 0 white,  0px  5px 0 white, 8px 8px 10px rgba(0, 0, 0, 0.4);
+    
+     
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+h1:hover{
+  color: #8fdbd8;
+  transform: scale(110%);
+  transition: transform 0.3s ease-in-out;
+
+
+  text-shadow: 
+    -5px -5px 0 white,  5px -5px 0 white,
+    -5px  5px 0 white,  5px  5px 0 white,
+    -5px  0px 0 white,  5px  0px 0 white,
+     0px -5px 0 white,  0px  5px 0 white,
+  0 0 20px #ffc400;
+}
+
+h2{
+  font-family: "takeover";
+  color: #10b48e;
+  background-color: rgb(255, 250, 243);
+  border-radius:10px;
+  padding: 10px;
+
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+h2:hover{
+  transform: scale(110%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 
+  0 0 10px #ffc400b6;
+}
+
+h3{
+  font-family: "tommy";
+  font-size: 30px;
+  color: #f775a9;
+  text-shadow: 
+  -3px -3px 0 white,  3px -3px 0 white,
+    -3px  3px 0 white,  3px  3px 0 white,
+    -3px  0px 0 white,  3px  0px 0 white,
+     0px -3px 0 white,  0px  3px 0 white, 5px 5px 10px rgba(0, 0, 0, 0.4);
+     
+    transition: transform 0.3s ease-in-out;
+}
+
+h3:hover{
+  transform: scale(110%);
+  transition: transform 0.3s ease-in-out;
+  text-shadow: -3px -3px 0 white,  3px -3px 0 white,
+    -3px  3px 0 white,  3px  3px 0 white,
+    -3px  0px 0 white,  3px  0px 0 white,
+     0px -3px 0 white,  0px  3px 0 white,
+  0 0 20px #ffc400;
+}
+
+p{
+  font-family: "lexend";
+  font-size: 14px;
+  padding: 10px;
+}
+
+.indent{
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.sylvanian {
+    position: absolute;
+    top: 220px;
+    right: 150px;
+}
+
+.hirono{
+    position: absolute;
+    top: 180px;
+    left: 50px; 
+}
+
+.clover{
+    position: absolute;
+    top: 340px;
+    right: 30px; 
+}
+
+.flower{
+    position: absolute;
+    top: 450px;
+    right: 140px; 
+}
+
+.lotus{
+    position: absolute;
+    top: 400px;
+    left: 60px; 
+}
+
+.sylvanian img, .hirono img{
+    display: block;
+    animation: wiggle 1.5s ease-in-out infinite;
+}
+
+.clover img, .flower img, .clover1 img, .clover2 img{
+    display: block;
+    animation: rotate 4s linear infinite;
+}
+
+.clover img, .flower img, .flower1 img, .flower2 img{
+    display: block;
+    animation: rotate1 4s linear infinite;
+}
+
+.lotus img{
+  animation-name: shake;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake{
+    0%   { transform: translateX(0px)   rotate(0deg); }
+    20%  { transform: translateX(-6px)  rotate(-4deg); }
+    40%  { transform: translateX(6px)   rotate(4deg); }
+    60%  { transform: translateX(-4px)  rotate(-3deg); }
+    80%  { transform: translateX(4px)   rotate(3deg); }
+    100% { transform: translateX(0px)   rotate(0deg); } 
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-6deg);}
+    50% {
+        transform: rotate(6deg);}
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.nyota {
+    display: flex;
+    position: fixed;     /* stays in place regardless of scrolling */
+    bottom: 20px;         /* distance from bottom of screen */
+    right: 1px;          /* distance from right of screen */
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease-in-out;
+    z-index: 20;
+}
+
+.nyota:hover {
+    transform: rotate(10deg);
+}
+
+.isi{
+  max-width: 400px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.banner h1 {
+  font-size: 80px;
+  max-width: 470px;
+  text-align: center;
+  margin: 0 0 10px 0; 
+}
+
+.banner h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: normal; 
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(pink\ banner.png);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.banner-bottom {
+    background-color:#feb7c9;
+    height: 40px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-image {
+  width: 100%;
+    overflow: hidden;
+  }
+ 
+.divider-image img {
+  width: 100%;
+  height: 70px;
+  display: block;
+  object-fit: cover;
+  }
+
+      .petal {
+          position: absolute;
+          top: -40px;
+          width: 20px;
+          height: 20px;
+          background: #FFB7C5;
+          border-radius: 0% 60% 0% 60%;
+          z-index: 1;
+          animation-name: fall, sway;
+          animation-timing-function: linear, ease-in-out;
+          animation-iteration-count: infinite, infinite;
+      }
+
+      @keyframes fall {
+          from { top: -40px; }
+          to   { top: 600%; }
+      }
+
+      @keyframes sway {
+          0%   { margin-left: 0px; }
+          50%  { margin-left: 40px; }
+          100% { margin-left: 0px; }
+      }
+
+      #p1 { left: 5vw;  width: 16px; height: 16px; animation-duration: 7s, 3s;  animation-delay: 0s, 0s; }
+      #p2 { left: 18vw; width: 22px; height: 22px; animation-duration: 9s, 4s;  animation-delay: 1s, 1s; }
+      #p3 { left: 30vw; width: 14px; height: 14px; animation-duration: 6s, 2.5s; animation-delay: 2s, 2s; }
+      #p4 { left: 45vw; width: 20px; height: 20px; animation-duration: 10s, 3.5s; animation-delay: 0.5s, 0.5s; }
+      #p5 { left: 58vw; width: 18px; height: 18px; animation-duration: 8s, 3s;  animation-delay: 3s, 3s; }
+      #p6 { left: 70vw; width: 24px; height: 24px; animation-duration: 11s, 4.5s; animation-delay: 1.5s, 1.5s; }
+      #p7 { left: 82vw; width: 16px; height: 16px; animation-duration: 7.5s, 2.8s; animation-delay: 4s, 4s; }
+      #p8 { left: 92vw; width: 20px; height: 20px; animation-duration: 9.5s, 3.2s; animation-delay: 2.5s, 2.5s; }
+
+.pengantar{
+    margin: 30px auto;
+    width: 70%;
+    background-color:antiquewhite;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 
+    -3px -3px 0 #10b48e,  3px -3px 0 #10b48e,
+    -3px  3px 0 #10b48e,  3px  3px 0 #10b48e,
+    -3px  0px 0 #10b48e,  3px  0px 0 #10b48e,
+     0px -3px 0 #10b48e,  0px  3px 0 #10b48e,
+        -8px -8px 0 white,  8px -8px 0 white,
+        -8px  8px 0 white,  8px  8px 0 white,
+        -8px  0px 0 white,  8px  0px 0 white,
+        0px -8px 0 white,  0px  8px 0 white;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.content1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    margin: 30px auto;
+    width: 70%;
+    background-color: #ffd0dd;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 
+    -3px -3px 0 white,  3px -3px 0 white,
+    -3px  3px 0 white,  3px  3px 0 white,
+    -3px  0px 0 white,  3px  0px 0 white,
+     0px -3px 0 white,  0px  3px 0 white,
+        -8px -8px 0 #8fdbd8,  8px -8px 0 #8fdbd8,
+        -8px  8px 0 #8fdbd8,  8px  8px 0 #8fdbd8,
+        -8px  0px 0 #8fdbd8,  8px  0px 0 #8fdbd8,
+        0px -8px 0 #8fdbd8,  0px  8px 0 #8fdbd8;
+}
+
+.clover1{
+    position: absolute;
+    top: 1440px;
+    right: 60px; 
+}
+
+.flower1{
+    position: absolute;
+    top: 1590px;
+    right: 160px; 
+}
+
+.clover2{
+    position: absolute;
+    top: 1440px;
+    left: 60px; 
+}
+
+.flower2{
+    position: absolute;
+    top: 1590px;
+    left: 160px; 
+}
+
+.foto{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #f775a9;
+    box-shadow: 0 0 10px #ffda5e;
+}
+
+.foto img, .foto1 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; opacity: 0.5s ease; box-shadow: 0.5 ease;
+}
+
+.foto:hover{
+  box-shadow: 0 0 5px black;
+}
+
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);;
+}
+
+.jenis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+ 
+  .udara, .air, .tanah, .suara, .cahaya {
+    transform: scale(100%);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    padding: 20px;
+    width: 250px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 0 black;
+    margin-bottom: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom, #f9edd1, #8fdbd8);
+    border: 3px solid #10b48e;
+  }
+ 
+  .udara:hover, .air:hover, .tanah:hover, .suara:hover, .cahaya:hover {
+    transform: scale(110%);
+    background: linear-gradient(to bottom, #f9edd1, #feb7c9);
+    border: 3px solid #f775a9;
+  }
+ 
+  .img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+ 
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+ 
+  .img-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    overflow-y: auto;
+    display: block;
+    text-align: center;
+ 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+    .img-overlay::-webkit-scrollbar {
+    width: 6px;
+  }
+ 
+  .img-overlay::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px;
+  }
+ 
+  .img-wrapper:hover .img-overlay {
+    opacity: 1;
+  }
+ 
+  .imgtext {
+    margin: 12px 0 0 0;
+  }
+
+.dampak {
+    display: flex;
+    background-color: rgb(255, 255, 244);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+    width: 950px;
+    height: 210px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    border: 5px solid #10b48e;
+  }
+ 
+  .dampak > div {
+    flex-grow: 1;
+    background-color: #b8dea4;
+    border-radius: 20px;
+    height: 180px;
+    padding: 10px;
+    overflow-y: auto; 
+    transition: flex-grow 0.3s ease-in-out;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+ 
+  .dampak > div:hover {
+    flex-grow: 10;
+  }
+ 
+  .dampak .short {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    align-items: center; 
+    justify-content: center;
+  }
+ 
+  .dampak .full {
+    display: none;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+ 
+  .dampak > div:hover .short {
+    display: none;
+  }
+ 
+  .dampak > div:hover .full {
+    display: block;
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cegah {
+  display: flex;
+  gap: 15px;
+  max-width: 900px; 
+  height: 250px;
+  margin: 0 auto;   
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #c5e5b5;
+  border-radius: 15px;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 
+    -3px -3px 0 white,  3px -3px 0 white,
+    -3px  3px 0 white,  3px  3px 0 white,
+    -3px  0px 0 white,  3px  0px 0 white,
+     0px -3px 0 white,  0px  3px 0 white,
+        -8px -8px 0 #8fdbd8,  8px -8px 0 #8fdbd8,
+        -8px  8px 0 #8fdbd8,  8px  8px 0 #8fdbd8,
+        -8px  0px 0 #8fdbd8,  8px  0px 0 #8fdbd8,
+        0px -8px 0 #8fdbd8,  0px  8px 0 #8fdbd8;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.cegah .card {
+  flex: 0 0 85%;
+  height: 100%;
+  border-radius: 20px;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 5px solid #f775a9;
+  padding: 10px;
+  gap: 10px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: "lexend"; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.cegah .card:nth-child(1) {
+  background-color: beige; /* Mint Light Green */
+}
+
+.foto1{
+    position: relative;
+    width: 230px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #10b48e;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.foto1:hover img{
+    transform: scale(1.1);
+}
+
+.foto1:hover{
+    box-shadow: 0 0 10px black;
+}
+
+.indent1{
+  text-indent: 2em;
+  text-align: justify;
+  max-width: 400px;
+}
+
+.cegah .card:nth-child(2) {
+  background-color: #c2f3f1; /* Light Pink / Lavender */
+}
+
+.cegah .card:nth-child(3) {
+  background-color: rgb(255, 245, 203); /* Soft Purple */
+}
+
+.cegah::-webkit-scrollbar {
+  height: 6px;
+}
+.cegah::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cegah::-webkit-scrollbar-thumb {
+  background: #969696;
+  border-radius: 10px;
+}
